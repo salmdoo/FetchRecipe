@@ -12,14 +12,14 @@ import Combine
 
 final class RecipeListViewModelTest: XCTestCase {
     
-    fileprivate var mockService: MockNetworkService!
+    fileprivate var mockService: MockNetworkServiceUnitTest!
     lazy var recipeListVM: RecipeListViewModel = {
         RecipeListViewModel(serviceManagement: mockService!, logging: LoggingServiceImp())
     }()
     
     override func setUpWithError() throws {
         super.setUp()
-        mockService = MockNetworkService()
+        mockService = MockNetworkServiceUnitTest()
     }
 
 

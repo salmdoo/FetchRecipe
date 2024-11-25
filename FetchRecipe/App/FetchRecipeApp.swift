@@ -11,6 +11,7 @@ import SwiftUI
 struct FetchRecipeApp: App {
     
     private var serviceManagement: NetworkService
+    @State var recipeListVM: RecipeListViewModel
     
     init() {
         if ProcessInfo.processInfo.environment["UITesting"] == "true",
@@ -19,11 +20,13 @@ struct FetchRecipeApp: App {
         } else {
             serviceManagement = NetworkServiceImp(url: APIConfig.url(for: .allRecipes))
         }
+        recipeListVM = RecipeListViewModel(serviceManagement: serviceManagement , logging: LoggingServiceImp())
+        
     }
     
     var body: some Scene {
         WindowGroup {
-            ContentView(recipeListVM: RecipeListViewModel(serviceManagement: serviceManagement , logging: LoggingServiceImp()))
+            ContentView(recipeListVM: recipeListVM)
         }
     }
 }

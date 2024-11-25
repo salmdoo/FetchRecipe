@@ -41,6 +41,17 @@
                ReferencedContainer = "container:FetchRecipe.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1476FA0A2CF4503A00E62AA4"
+               BuildableName = "FetchRecipeUITests.xctest"
+               BlueprintName = "FetchRecipeUITests"
+               ReferencedContainer = "container:FetchRecipe.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

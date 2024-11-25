@@ -9,7 +9,7 @@ import Foundation
 import Combine
 @testable import FetchRecipe
 
-struct MockNetworkService: NetworkService {
+struct MockNetworkServiceUnitTest: NetworkService {
     
     var shouldReturnError = false
     var shouldReturnEmptyData = false
