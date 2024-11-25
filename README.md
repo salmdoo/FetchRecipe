@@ -1,29 +1,24 @@
 # README
 
-<!--@START_MENU_TOKEN@-->Summary<!--@END_MENU_TOKEN@-->
-
 ## Overview
 
 The application provides users with a seamless experience, empowering them to effortlessly explore a diverse array of recipes.
 
 ### Snapshots
-
+| Meal list | Empty Data | Service Errors |
+|----------|----------|----------|
+|<kbd> ![Simulator Screenshot - Clone 1 of iPhone 15 Plus - 2024-11-24 at 22 43 59](https://github.com/user-attachments/assets/7ddfa710-79df-4d47-99f3-270df7dafb12)</kbd>|<kbd>  ![Simulator Screenshot - iPhone 15 Plus - 2024-11-24 at 22 48 08](https://github.com/user-attachments/assets/ac4ad312-fedf-48cc-a7f8-56ddfa72a73c)</kbd>|<kbd>  ![Simulator Screenshot - iPhone 15 Plus - 2024-11-24 at 22 48 22](https://github.com/user-attachments/assets/07a469b7-9271-41b5-8336-b892787eca89)</kbd> |
 
 ### Steps to Run the App
-1. Clone the Repository
-- Clone the project repository to your local using the following command:
+1. Clone the Repository: Clone the project repository to your local using the following command:
 ```git clone https://github.com/salmdoo/FetchRecipe.git```
-2. Open the Project in Xcode
-- Navigate to the project directory
-- Double-click on the *FetchRecipe.xcodeproj* file
-3.Select the Target:
+2. Open the Project in Xcode: Navigate to the project directory, double-click on the ```FetchRecipe.xcodeproj``` file
+3. Select the Target:
 In the center top banner of Xcode, you should see ```"FetchRecipe >"```,  select the target device or simulator where you want to run the app.
-4. Run the App
+4. Run the App:
 - Click the Run button in Xcode or press ```Cmd + R```.
 - The app will launch in the selected simulator or on the connected device.
-5. Test the App
-- In the left menu, select *"Show the Test nagivator".*
-- Click on the test target to run test cases.
+5. Test the App: In the left menu, select ```Show the Test nagivator```, click on the test target to run test cases.
 
 ### Project Priorities and Focus Areas
 
@@ -34,7 +29,8 @@ In the center top banner of Xcode, you should see ```"FetchRecipe >"```,  select
   - Implemented MVVM (Model-View-ViewModel) to separate concerns, ensuring code clarity and maintainability. This design facilitates easier testing and scaling as the project grows.
 - **Protocol-Oriented Programming (POP)**:  
   - Leveraged POP to create flexible, reusable components by focusing on protocols over inheritance. This reduces coupling, promotes clean abstractions, and supports better scalability across features.
-
+- **Dependency Injection (DI)**:
+  - Inject the appropriate network service, allowing seamless switching between real API calls and mock services for testing purposes.
 #### 2. **Swift Concurrency and Combine Framework**
 - Integrated Combine for reactive programming, simplifying state management and data flow, particularly for UI updates tied to asynchronous operations.
 
@@ -47,7 +43,7 @@ In the center top banner of Xcode, you should see ```"FetchRecipe >"```,  select
   - Optimized views to load UI elements only when data is available, preventing unnecessary rendering and enhancing overall application performance.
 
 ### Time Spent:
-"I worked on this project for approximately **7 hours in 7 days**, dedicating an average of **1 hours per day**."
+I worked on this project for approximately **7 hours in 7 days**, dedicating an average of **1 hours per day**.
 
 **Time Allocation**:  
 - **Planning & Architecture** (20%): Designed the structure using Vertical Slice Architecture and MVVM.  
@@ -71,13 +67,14 @@ Yes, I made a few significant trade-offs to balance development speed, performan
 **Kingfisher**
 Kingfisher is used for efficient image downloading, caching, and asynchronous loading. It helps optimize performance by ensuring that images are loaded from the cache whenever possible, reducing network calls and enhancing the user experience
 
-### Additional Information: Is there anything else we should know? Feel free to share any insights or constraints you encountered.
+### Additional Information:
 
 - **Responsive UI**: The app adjusts the layout based on device orientation, displaying 1 column in portrait and 2 columns in landscape.
 
-- **User-Friendly Interface**: Designed for ease of use with an intuitive layout.
+- **User-Friendly Interface**:
+  - Designed for ease of use with an intuitive layout.
+  - Users can refresh the recipe list by pulling down on the screen
 
 - **Error Handling**: Displays specific error messages for service issues, malformed, or empty data.
 
-- **Testing**:  
-  Unit and UI tests are written to ensure functionality and UI reliability.
+- **Testing**: Unit and UI tests are written to ensure functionality and UI reliability.
