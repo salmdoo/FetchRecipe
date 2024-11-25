@@ -14,7 +14,7 @@ The application provides users with a seamless experience, empowering them to ef
 ```git clone https://github.com/salmdoo/FetchRecipe.git```
 2. Open the Project in Xcode: Navigate to the project directory, double-click on the ```FetchRecipe.xcodeproj``` file
 3. Select the Target:
-In the center top banner of Xcode, you should see ```"FetchRecipe >"```,  select the target device or simulator where you want to run the app.
+In the center top banner of Xcode, you should see ```"FetchRecipe >"```,  select the target device or simulator where you want to run the app (support iOS 16 and up).
 4. Run the App:
 - Click the Run button in Xcode or press ```Cmd + R```.
 - The app will launch in the selected simulator or on the connected device.
