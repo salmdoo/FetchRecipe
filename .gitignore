@@ -1,0 +1,75 @@
+# General
+.DS_Store
+Thumbs.db
+
+# Xcode
+*.xcworkspace
+!default.xcworkspace
+*.xcuserstate
+*.xccheckout
+*.moved-aside
+DerivedData/
+.idea/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Build artifacts
+build/
+*.o
+*.ll
+*.bc
+*.aux
+*.log
+*.out
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Swift Package Manager
+.swiftpm/
+Package.resolved
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Firebase
+GoogleService-Info.plist
+
+# Environment variables
+.env
+
+# Bundler
+/.bundle
+
+# Logs
+*.log
+
+# Temporary files
+*.swp
+*.swo
+*.tmp
+
+# SwiftLint
+.swiftlint.yml
+.swiftlint-cache
+
+# IDE-specific files
+.vscode/
+*.code-workspace
+
+# Playground files
+timeline.xctimeline
+playground.xcworkspace
+
+# User-specific settings
+*.xcuserdata
+
